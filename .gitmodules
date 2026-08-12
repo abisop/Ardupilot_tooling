@@ -1,0 +1,6 @@
+[submodule "dev/ardupilot"]
+	path = dev/ardupilot
+	url = https://github.com/abisop/ardupilot.git
+[submodule "plotjuggler-apbin-plugins"]
+	path = plotjuggler-apbin-plugins
+	url = https://github.com/ArduPilot/plotjuggler-apbin-plugins.git
