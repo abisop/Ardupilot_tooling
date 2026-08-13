@@ -7,3 +7,6 @@
 [submodule "dev/plotjuggler"]
 	path = dev/plotjuggler
 	url = https://github.com/PlotJuggler/PlotJuggler.git
+[submodule "dev/ardupilot_gazebo"]
+	path = dev/ardupilot_gazebo
+	url = https://github.com/ArduPilot/ardupilot_gazebo
