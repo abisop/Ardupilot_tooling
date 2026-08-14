@@ -4,3 +4,6 @@
 [submodule "plotjuggler-apbin-plugins"]
 	path = plotjuggler-apbin-plugins
 	url = https://github.com/ArduPilot/plotjuggler-apbin-plugins.git
+[submodule "dev/plotjuggler"]
+	path = dev/plotjuggler
+	url = https://github.com/PlotJuggler/PlotJuggler.git
