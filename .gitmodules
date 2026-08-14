@@ -2,5 +2,14 @@
 	path = dev/ardupilot
 	url = https://github.com/abisop/ardupilot.git
 [submodule "plotjuggler-apbin-plugins"]
-	path = plotjuggler-apbin-plugins
+	path = ardupilot_tools/plotjuggler-apbin-plugins
 	url = https://github.com/ArduPilot/plotjuggler-apbin-plugins.git
+<<<<<<< HEAD
+=======
+[submodule "dev/plotjuggler"]
+	path = dev/plotjuggler
+	url = https://github.com/PlotJuggler/PlotJuggler.git
+[submodule "dev/ardupilot_gazebo"]
+	path = dev/ardupilot_gazebo
+	url = https://github.com/ArduPilot/ardupilot_gazebo
+>>>>>>> f28f3bcbce22a89f0ca387684676d164242663a9
