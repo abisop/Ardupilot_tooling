@@ -7,7 +7,7 @@ def generate_launch_description():
     # Declare launch arguments
     ardupilot_dir_arg = DeclareLaunchArgument(
         'ardupilot_dir',
-        default_value=os.path.expanduser('~/drone/ardupilot'),
+        default_value=os.path.expanduser('~/Ardupilot_tooling/dev/ardupilot'),
         description='Absolute path to the ardupilot root directory'
     )
     
@@ -29,6 +29,12 @@ def generate_launch_description():
         description='Absolute path to the binary log/data file'
     )
 
+    headless_arg = DeclareLaunchArgument(
+        'headless',
+        default_value='false',
+        description='Run simulation in headless mode (no GUI)'
+    )
+
     # 1. Launch Gazebo (gz sim)
     gazebo_process = ExecuteProcess(
         cmd=['gz', 'sim', '-v4', '-r', LaunchConfiguration('gazebo_world')],
@@ -45,7 +51,8 @@ def generate_launch_description():
             '-f', 'gazebo-iris',
             '--model', 'JSON',
             '--map',
-            '--console'
+            '--console',
+            '-j12'
         ],
         cwd=LaunchConfiguration('ardupilot_dir'),
         output='screen',
@@ -68,7 +75,7 @@ def generate_launch_description():
         gazebo_world_arg,
         layout_file_arg,
         bin_file_arg,
-        #gazebo_process,
+        gazebo_process,
         ardupilot_process,
-        plotjuggler_process
+        #plotjuggler_process
     ])

@@ -1,4 +1,5 @@
 # ros ws folders
-build/
-install/
-log/
+dev/
+projects/install/
+projects/build/
+projects/log/
