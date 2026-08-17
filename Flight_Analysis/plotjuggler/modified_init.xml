@@ -3,50 +3,50 @@
  <tabbed_widget name="Main Window" parent="main_window">
   <Tab containers="1" tab_name="Flight Overview">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.670022;0.329978" count="2">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="2" orientation="-" sizes="0.670391;0.329609">
        <DockArea name="Local position">
-        <plot mode="XYPlot" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot">
+         <range bottom="-1.379532" left="-1.893421" right="1.893421" top="1.379532"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Altitude">
-        <plot mode="XYPlot" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot">
+         <range bottom="-1.635234" left="-8.406480" right="4.171361" top="1.855611"/>
          <limitY/>
-         <curve color="#9467bd" curve_x="/XKF1/#0/PE" name="/XKF1/#0/P[E;N]" curve_y="/XKF1/#0/PN"/>
+         <curve color="#9467bd" curve_x="/XKF1/#0/PE" curve_y="/XKF1/#0/PN" name="/XKF1/#0/P[E;N]"/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-       <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
+       <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
         <DockArea name="Global position">
-         <plot mode="XYPlot" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="75.734826" right="26.901350" left="26.901282" top="75.734906"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot">
+          <range bottom="77.419963" left="28.511468" right="28.512106" top="77.420467"/>
           <limitY/>
-          <curve color="#d62728" curve_x="/AHR2/Lat" name="/AHR2/L[at;ng]" curve_y="/AHR2/Lng"/>
+          <curve color="#d62728" curve_x="/AHR2/Lat" curve_y="/AHR2/Lng" name="/AHR2/L[at;ng]"/>
          </plot>
         </DockArea>
         <DockArea name="Wind">
-         <plot mode="XYPlot" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot">
+          <range bottom="0.000000" left="0.000000" right="0.000000" top="0.000000"/>
           <limitY/>
-          <curve color="#17becf" curve_x="/XKF2/#0/VWE" name="/XKF2/#0/VW[E;N]" curve_y="/XKF2/#0/VWN"/>
+          <curve color="#17becf" curve_x="/XKF2/#0/VWE" curve_y="/XKF2/#0/VWN" name="/XKF2/#0/VW[E;N]"/>
          </plot>
         </DockArea>
        </DockSplitter>
        <DockArea name="Flight mode">
-        <plot style="StepsInv" mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="126.900000" right="313.081129" left="0.081263" top="127.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries" style="StepsInv">
+         <range bottom="-0.225000" left="5.000000" right="194.000000" top="9.225000"/>
          <limitY/>
          <curve color="#bcbd22" name="/MODE/Mode"/>
         </plot>
        </DockArea>
        <DockArea name="Arming">
-        <plot style="StepsInv" mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.025000" right="313.081129" left="0.081263" top="1.025000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries" style="StepsInv">
+         <range bottom="-0.025000" left="5.000000" right="194.000000" top="1.025000"/>
          <limitY/>
          <curve color="#1f77b4" name="/ARM/ArmState"/>
         </plot>
@@ -58,67 +58,67 @@
   </Tab>
   <Tab containers="1" tab_name="Errors">
    <Container>
-    <DockSplitter orientation="-" sizes="0.350112;0.649888" count="2">
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
+    <DockSplitter count="2" orientation="-" sizes="0.349721;0.650279">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
       <DockArea name="Error codes">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="0.000000" top="0.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Protocol errors">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Error flags (should be 1)">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.326752;0.673248" count="2">
-      <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.326435;0.673565">
+      <DockSplitter count="2" orientation="-" sizes="0.500861;0.499139">
        <DockArea name="Internal errors">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="RC failsafe">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
-       <DockSplitter orientation="|" sizes="0.502841;0.497159" count="2">
+      <DockSplitter count="2" orientation="-" sizes="0.500861;0.499139">
+       <DockSplitter count="2" orientation="|" sizes="0.502976;0.497024">
         <DockArea name="Error count">
-         <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+          <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
           <limitY/>
          </plot>
         </DockArea>
         <DockArea name="Error flags (should be 0)">
-         <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+          <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
           <limitY/>
          </plot>
         </DockArea>
        </DockSplitter>
-       <DockSplitter orientation="|" sizes="0.502841;0.497159" count="2">
+       <DockSplitter count="2" orientation="|" sizes="0.502976;0.497024">
         <DockArea name="Error line">
-         <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+          <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
           <limitY/>
          </plot>
         </DockArea>
         <DockArea name="Status read error count">
-         <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+          <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
           <limitY/>
          </plot>
         </DockArea>
@@ -130,45 +130,45 @@
   </Tab>
   <Tab containers="1" tab_name="Operator">
    <Container>
-    <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+    <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Main inputs">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="GCS commands">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Secondary inputs">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Safety switch">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Other inputs">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Mode change reason">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
@@ -178,44 +178,44 @@
   </Tab>
   <Tab containers="1" tab_name="Avionics general">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
        <DockArea name="Temperatures">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Battery health">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="Electronics voltage">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Magnetic field">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.100000" left="0.000000" right="0.000000" top="0.100000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Battery current">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -226,31 +226,31 @@
   </Tab>
   <Tab containers="1" tab_name="RC link">
    <Container>
-    <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+    <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Link quality">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="RSSI">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="RSSI vs yaw">
-       <plot style="Dots" mode="XYPlot" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot" style="Dots">
+        <range bottom="-1.050000" left="-2.090896" right="2.090896" top="1.050000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="RSSI vs distance">
-       <plot style="Dots" mode="XYPlot" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot" style="Dots">
+        <range bottom="-1.050000" left="-2.090896" right="2.090896" top="1.050000"/>
         <limitY/>
        </plot>
       </DockArea>
@@ -260,31 +260,31 @@
   </Tab>
   <Tab containers="1" tab_name="Processor">
    <Container>
-    <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+    <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Loop rate">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Long loops">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="CPU load">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Free memory">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
@@ -294,46 +294,46 @@
   </Tab>
   <Tab containers="1" tab_name="GPS Health">
    <Container>
-    <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+    <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Status">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
-      <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+      <DockSplitter count="2" orientation="-" sizes="0.501119;0.498881">
        <DockArea name="Horizontal accuracy">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Horizontal DoP">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Satellites">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
-      <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+      <DockSplitter count="2" orientation="-" sizes="0.5;0.5">
        <DockArea name="Vertical accuracy">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Vertical DoP">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -344,29 +344,33 @@
   </Tab>
   <Tab containers="1" tab_name="Vibration">
    <Container>
-    <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
+    <DockSplitter count="4" orientation="-" sizes="0.24972;0.25084;0.24972;0.24972">
      <DockArea name="Clipping">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="0.000000" left="5.000000" right="194.000000" top="0.000000"/>
        <limitY/>
+       <curve color="#17becf" name="/VIBE/#0/Clip"/>
       </plot>
      </DockArea>
      <DockArea name="Vibrations X">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-0.027270" left="5.000000" right="194.000000" top="1.368392"/>
        <limitY/>
+       <curve color="#ff7f0e" name="/VIBE/#0/VibeX"/>
       </plot>
      </DockArea>
      <DockArea name="Vibrations Y">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-0.025003" left="5.000000" right="194.000000" top="1.276775"/>
        <limitY/>
+       <curve color="#f14cc1" name="/VIBE/#0/VibeY"/>
       </plot>
      </DockArea>
      <DockArea name="Vibrations Z">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-0.007260" left="5.000000" right="194.000000" top="0.575133"/>
        <limitY/>
+       <curve color="#9467bd" name="/VIBE/#0/VibeZ"/>
       </plot>
      </DockArea>
     </DockSplitter>
@@ -374,44 +378,44 @@
   </Tab>
   <Tab containers="1" tab_name="Sensor agreement">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
        <DockArea name="Altitude">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Relative altitude">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.100000" left="0.000000" right="0.000000" top="0.100000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Ground distance">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="Vertical velocity">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.100000" left="0.000000" right="0.000000" top="0.100000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="GPS RX agreement (m)">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.100000" left="0.000000" right="0.000000" top="0.100000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -422,44 +426,44 @@
   </Tab>
   <Tab containers="1" tab_name="EKF Innovations">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
        <DockArea name="EKF 0 innovation tests">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="EKF 1 innovation tests">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="EKF 2 innovation tests">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -470,45 +474,45 @@
   </Tab>
   <Tab containers="1" tab_name="Yaw solution">
    <Container>
-    <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+    <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="Yaw solutions">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="...">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="EKF 0 GSF estimates">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="EKF yaw test ratio">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="EKF 1 GSF estimates">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="EKF GSF uncertainty">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
@@ -518,83 +522,83 @@
   </Tab>
   <Tab containers="1" tab_name="EKF solution status">
    <Container>
-    <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
+    <DockSplitter count="4" orientation="-" sizes="0.24972;0.25084;0.24972;0.24972">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
       <DockArea name="Attitude">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Velocity">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Position">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
       <DockArea name="GNSS">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="GNSS glitch">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Terrain altitude">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
       <DockArea name="Dead reckoning">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Filter initialization">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Constant-position operation">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
       <DockArea name="Baro compensation">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Airspeed rejection">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Optical flow takeoff">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
@@ -604,38 +608,38 @@
   </Tab>
   <Tab containers="1" tab_name="EKF lanes">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="EKF lane">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="EKF 0 sources">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="EKF 1 sources">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="EKF 2 sources">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -646,64 +650,64 @@
   </Tab>
   <Tab containers="1" tab_name="INS">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
        <DockArea name="Acceleration X">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Acceleration Y">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Acceleration Z">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="Angular velocity X">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Angular velocity Y">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Angular velocity Z">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="Magnetic field X">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Magnetic field Y">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Magnetic field Z">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -714,45 +718,45 @@
   </Tab>
   <Tab containers="1" tab_name="Optical Flow">
    <Container>
-    <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+    <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="...">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="...">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-        <limitY/>
-       </plot>
-      </DockArea>
-     </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockArea name="...">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-        <limitY/>
-       </plot>
-      </DockArea>
-      <DockArea name="...">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
       <DockArea name="...">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="...">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+        <limitY/>
+       </plot>
+      </DockArea>
+     </DockSplitter>
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+        <limitY/>
+       </plot>
+      </DockArea>
+      <DockArea name="...">
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
@@ -762,64 +766,64 @@
   </Tab>
   <Tab containers="1" tab_name="Rate Ctrl">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.470064;0.529936" count="2">
-      <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.46996;0.53004">
+      <DockSplitter count="4" orientation="-" sizes="0.24972;0.25084;0.24972;0.24972">
        <DockArea name="Pilot inputs">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Roll rate performance">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Pitch rate performance">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Yaw rate performance">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
-       <DockSplitter orientation="|" sizes="0.503008;0.496992" count="2">
+      <DockSplitter count="4" orientation="-" sizes="0.24972;0.25084;0.24972;0.24972">
+       <DockSplitter count="2" orientation="|" sizes="0.501892;0.498108">
         <DockArea name="Motor outputs">
-         <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+          <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
           <limitY/>
          </plot>
         </DockArea>
         <DockArea name="D-gain modifiers">
-         <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-          <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+         <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+          <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
           <limitY/>
          </plot>
         </DockArea>
        </DockSplitter>
        <DockArea name="Roll PID elements">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Pitch PID elements">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Yaw PID elements">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -830,47 +834,47 @@
   </Tab>
   <Tab containers="1" tab_name="Attitude Ctrl">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
        <DockArea name="Pilot inputs">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-6.308226" right="313.081129" left="0.081263" top="13.595422"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.000560" left="5.000000" right="194.000000" top="-0.000243"/>
          <limitY/>
          <curve color="#d62728" name="/ATT/DesRoll"/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-13.621585" right="313.081129" left="0.081263" top="11.213843"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.000528" left="5.000000" right="194.000000" top="-0.000090"/>
          <limitY/>
          <curve color="#1ac938" name="/ATT/DesPitch"/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="8.920999" right="313.081129" left="0.081263" top="13.343701"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="23.585052" left="5.000000" right="194.000000" top="101.069055"/>
          <limitY/>
          <curve color="#ff7f0e" name="/ATT/DesYaw"/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="Roll performance">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Pitch performance">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Yaw performance">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -881,63 +885,63 @@
   </Tab>
   <Tab containers="1" tab_name="Position Ctrl">
    <Container>
-    <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
+    <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
       <DockArea name="Position North">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Position East">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Position Down">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.331421;0.337157;0.331421" count="3">
+     <DockSplitter count="3" orientation="|" sizes="0.331329;0.337341;0.331329">
       <DockArea name="Velocity North">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Velocity East">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Velocity Down">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
      </DockSplitter>
-     <DockSplitter orientation="|" sizes="0.331421;0.337157;0.331421" count="3">
+     <DockSplitter count="3" orientation="|" sizes="0.331329;0.337341;0.331329">
       <DockArea name="Acceleration North">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Acceleration East">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
       <DockArea name="Acceleration Down">
-       <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-        <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+       <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+        <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
         <limitY/>
        </plot>
       </DockArea>
@@ -947,92 +951,32 @@
   </Tab>
   <Tab containers="1" tab_name="Navigator">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
        <DockArea name="Waypoint tracking">
-        <plot mode="XYPlot" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="XYPlot">
+         <range bottom="-1.050000" left="-2.067000" right="2.067000" top="1.050000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Bearing">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+      <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
        <DockArea name="Distance to next waypoint">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Roll angle">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-      </DockSplitter>
-     </DockSplitter>
-    </DockSplitter>
-   </Container>
-  </Tab>
-  <Tab containers="1" tab_name="ICEngine">
-   <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
-       <DockArea name="Temperatures">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Pressures">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Engine load">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Engine speed">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-      </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
-       <DockArea name="Fuel consumption rate">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Overall fuel consumption">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Status flags">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -1043,82 +987,82 @@
   </Tab>
   <Tab containers="1" tab_name="Power">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.333333;0.333333;0.333333" count="3">
-      <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="3" orientation="|" sizes="0.333333;0.333333;0.333333">
+      <DockSplitter count="4" orientation="-" sizes="0.24972;0.25084;0.24972;0.24972">
        <DockArea name="Current">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Voltage">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Power">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.100000" left="0.000000" right="0.000000" top="0.100000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Resting voltage">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
+      <DockSplitter count="4" orientation="-" sizes="0.24972;0.25084;0.24972;0.24972">
        <DockArea name="Remaining %">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Energy consumed">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Ah consumed">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Resistance estimate">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.25;0.25;0.25;0.25" count="4">
+      <DockSplitter count="4" orientation="-" sizes="0.24972;0.25084;0.24972;0.24972">
        <DockArea name="Airspeed">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Throttle">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="Current model">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="-0.100000" left="0.000000" right="0.000000" top="0.100000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -1129,140 +1073,44 @@
   </Tab>
   <Tab containers="1" tab_name="Landing">
    <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
       </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-      </DockSplitter>
-     </DockSplitter>
-    </DockSplitter>
-   </Container>
-  </Tab>
-  <Tab containers="1" tab_name="Radio">
-   <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-       <DockArea name="Packets transmitted">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Packets received">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Packets never arrived">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-      </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-       <DockArea name="Flags">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Stream slowdown">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Buffer full instances">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-      </DockSplitter>
-     </DockSplitter>
-    </DockSplitter>
-   </Container>
-  </Tab>
-  <Tab containers="1" tab_name="CAN">
-   <Container>
-    <DockSplitter orientation="-" sizes="1" count="1">
-     <DockSplitter orientation="|" sizes="0.5;0.5" count="2">
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-       <DockArea name="TX 0">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="TX 1">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
        <DockArea name="...">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-      </DockSplitter>
-      <DockSplitter orientation="-" sizes="0.333707;0.332587;0.333707" count="3">
-       <DockArea name="RX 0">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="RX 1">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
-         <limitY/>
-        </plot>
-       </DockArea>
-       <DockArea name="Errors">
-        <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-         <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
          <limitY/>
         </plot>
        </DockArea>
@@ -1273,16 +1121,16 @@
   </Tab>
   <Tab containers="1" tab_name="Filtering">
    <Container>
-    <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+    <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
      <DockArea name="FFT tracking">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
        <limitY/>
       </plot>
      </DockArea>
      <DockArea name="Filter frequency">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="0.000000" right="100.000000" left="0.000000" top="100.000000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="59.289617" left="47.515745" right="54.443667" top="77.049180"/>
        <limitY/>
       </plot>
      </DockArea>
@@ -1291,31 +1139,130 @@
   </Tab>
   <Tab containers="1" tab_name="Toilet Bowling">
    <Container>
-    <DockSplitter orientation="-" sizes="0.5;0.5" count="2">
+    <DockSplitter count="2" orientation="-" sizes="0.500559;0.499441">
      <DockArea name="Roll">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="1.370441" left="5.000000" right="194.000000" top="1.473003"/>
        <limitY/>
+       <curve color="#bcbd22" name="/ATT/Roll"/>
       </plot>
      </DockArea>
      <DockArea name="Pitch">
-      <plot mode="TimeSeries" line_width="1.0" flip_y="false" flip_x="false">
-       <range bottom="-0.100000" right="0.000000" left="0.000000" top="0.100000"/>
+      <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+       <range bottom="-0.694531" left="5.000000" right="194.000000" top="-0.098438"/>
        <limitY/>
+       <curve color="#1f77b4" name="/ATT/Pitch"/>
       </plot>
      </DockArea>
     </DockSplitter>
    </Container>
   </Tab>
-  <currentTabIndex index="16"/>
+  <Tab containers="1" tab_name="Radio">
+   <Container>
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
+       <DockArea name="Packets transmitted">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="Packets received">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="Packets never arrived">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
+       <DockArea name="Flags">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="Stream slowdown">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="Buffer full instances">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+     </DockSplitter>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <Tab containers="1" tab_name="CAN">
+   <Container>
+    <DockSplitter count="1" orientation="-" sizes="1">
+     <DockSplitter count="2" orientation="|" sizes="0.5;0.5">
+      <DockSplitter count="3" orientation="-" sizes="0.334452;0.331096;0.334452">
+       <DockArea name="TX 0">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="TX 1">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="...">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+      <DockSplitter count="3" orientation="-" sizes="0.333333;0.333333;0.333333">
+       <DockArea name="RX 0">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="RX 1">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+       <DockArea name="Errors">
+        <plot flip_x="false" flip_y="false" line_width="1.0" mode="TimeSeries">
+         <range bottom="0.000000" left="0.000000" right="100.000000" top="100.000000"/>
+         <limitY/>
+        </plot>
+       </DockArea>
+      </DockSplitter>
+     </DockSplitter>
+    </DockSplitter>
+   </Container>
+  </Tab>
+  <currentTabIndex index="2"/>
  </tabbed_widget>
  <use_relative_time_offset enabled="1"/>
+ <streaming_buffer_size value="5"/>
  <!-- - - - - - - - - - - - - - - -->
  <!-- - - - - - - - - - - - - - - -->
  <Plugins>
   <plugin ID="ArduPilot Bin"/>
   <plugin ID="DataLoad CSV">
-   <parameters time_axis="" delimiter="0"/>
+   <parameters delimiter="0" skip_rows="0" time_axis=""/>
   </plugin>
   <plugin ID="DataLoad MCAP"/>
   <plugin ID="DataLoad ROS2 bags">
@@ -1327,6 +1274,16 @@
    <selected_topics value=""/>
   </plugin>
   <plugin ID="DataLoad ULog"/>
+  <plugin ID="Foxglove ROS2 Bridge">
+   <foxglove_client clamp_large_arrays="0" max_array_size="500" url="ws://127.0.0.1:8765" use_timestamp="0">
+    <topics/>
+   </foxglove_client>
+  </plugin>
+  <plugin ID="PlotJuggler Bridge">
+   <websocket_client clamp_large_arrays="0" max_array_size="500" url="ws://127.0.0.1:9090" use_timestamp="0">
+    <topics/>
+   </websocket_client>
+  </plugin>
   <plugin ID="ROS2 Topic Subscriber">
    <use_header_stamp value="false"/>
    <discard_large_arrays value="true"/>
@@ -1338,24 +1295,101 @@
   <plugin ID="UDP Server"/>
   <plugin ID="WebSocket Server"/>
   <plugin ID="ZMQ Subscriber"/>
+  <plugin ID="CSV/Parquet Exporter"/>
   <plugin ID="Fast Fourier Transform"/>
   <plugin ID="Quaternion to RPY"/>
   <plugin ID="Reactive Script Editor">
-   <library code="--[[ Helper function to create a series from arrays&#xa;&#xa; new_series: a series previously created with ScatterXY.new(name)&#xa; prefix:     prefix of the timeseries, before the index of the array&#xa; suffix_X:   suffix to complete the name of the series containing the X value. If [nil], use the index of the array.&#xa; suffix_Y:   suffix to complete the name of the series containing the Y value&#xa; timestamp:   usually the tracker_time variable&#xa;              &#xa; Example:&#xa; &#xa; Assuming we have multiple series in the form:&#xa; &#xa;   /trajectory/node.{X}/position/x&#xa;   /trajectory/node.{X}/position/y&#xa;   &#xa; where {N} is the index of the array (integer). We can create a reactive series from the array with:&#xa; &#xa;   new_series = ScatterXY.new(&quot;my_trajectory&quot;) &#xa;   CreateSeriesFromArray( new_series, &quot;/trajectory/node&quot;, &quot;position/x&quot;, &quot;position/y&quot;, tracker_time );&#xa;--]]&#xa;&#xa;function CreateSeriesFromArray( new_series, prefix, suffix_X, suffix_Y, timestamp )&#xa;  &#xa;  --- clear previous values&#xa;  new_series:clear()&#xa;  &#xa;  --- Append points to new_series&#xa;  index = 0&#xa;  while(true) do&#xa;&#xa;    x = index;&#xa;    -- if not nil, get the X coordinate from a series&#xa;    if suffix_X ~= nil then &#xa;      series_x = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_X) )&#xa;      if series_x == nil then break end&#xa;      x = series_x:atTime(timestamp)&#x9; &#xa;    end&#xa;    &#xa;    series_y = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_Y) )&#xa;    if series_y == nil then break end &#xa;    y = series_y:atTime(timestamp)&#xa;    &#xa;    new_series:push_back(x,y)&#xa;    index = index+1&#xa;  end&#xa;end&#xa;&#xa;--[[ Similar to the built-in function GetSeriesNames(), but select only the names with a give prefix. --]]&#xa;&#xa;function GetSeriesNamesByPrefix(prefix)&#xa;  -- GetSeriesNames(9 is a built-in function&#xa;  all_names = GetSeriesNames()&#xa;  filtered_names = {}&#xa;  for i, name in ipairs(all_names)  do&#xa;    -- check the prefix&#xa;    if name:find(prefix, 1, #prefix) then&#xa;      table.insert(filtered_names, name);&#xa;    end&#xa;  end&#xa;  return filtered_names&#xa;end&#xa;&#xa;--[[ Modify an existing series, applying offsets to all their X and Y values&#xa;&#xa; series: an existing timeseries, obtained with TimeseriesView.find(name)&#xa; delta_x: offset to apply to each x value&#xa; delta_y: offset to apply to each y value &#xa;  &#xa;--]]&#xa;&#xa;function ApplyOffsetInPlace(series, delta_x, delta_y)&#xa;  -- use C++ indeces, not Lua indeces&#xa;  for index=0, series:size()-1 do&#xa;    x,y = series:at(index)&#xa;    series:set(index, x + delta_x, y + delta_y)&#xa;  end&#xa;end&#xa;"/>
+   <library code="--[[ Helper function to create a series from arrays
+
+ new_series: a series previously created with ScatterXY.new(name)
+ prefix:     prefix of the timeseries, before the index of the array
+ suffix_X:   suffix to complete the name of the series containing the X value. If [nil], use the index of the array.
+ suffix_Y:   suffix to complete the name of the series containing the Y value
+ timestamp:   usually the tracker_time variable
+              
+ Example:
+ 
+ Assuming we have multiple series in the form:
+ 
+   /trajectory/node.{X}/position/x
+   /trajectory/node.{X}/position/y
+   
+ where {N} is the index of the array (integer). We can create a reactive series from the array with:
+ 
+   new_series = ScatterXY.new(&quot;my_trajectory&quot;) 
+   CreateSeriesFromArray( new_series, &quot;/trajectory/node&quot;, &quot;position/x&quot;, &quot;position/y&quot;, tracker_time );
+--]]
+
+function CreateSeriesFromArray( new_series, prefix, suffix_X, suffix_Y, timestamp )
+  
+  --- clear previous values
+  new_series:clear()
+  
+  --- Append points to new_series
+  index = 0
+  while(true) do
+
+    x = index;
+    -- if not nil, get the X coordinate from a series
+    if suffix_X ~= nil then 
+      series_x = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_X) )
+      if series_x == nil then break end
+      x = series_x:atTime(timestamp)	 
+    end
+    
+    series_y = TimeseriesView.find( string.format( &quot;%s.%d/%s&quot;, prefix, index, suffix_Y) )
+    if series_y == nil then break end 
+    y = series_y:atTime(timestamp)
+    
+    new_series:push_back(x,y)
+    index = index+1
+  end
+end
+
+--[[ Similar to the built-in function GetSeriesNames(), but select only the names with a give prefix. --]]
+
+function GetSeriesNamesByPrefix(prefix)
+  -- GetSeriesNames(9 is a built-in function
+  all_names = GetSeriesNames()
+  filtered_names = {}
+  for i, name in ipairs(all_names)  do
+    -- check the prefix
+    if name:find(prefix, 1, #prefix) then
+      table.insert(filtered_names, name);
+    end
+  end
+  return filtered_names
+end
+
+--[[ Modify an existing series, applying offsets to all their X and Y values
+
+ series: an existing timeseries, obtained with TimeseriesView.find(name)
+ delta_x: offset to apply to each x value
+ delta_y: offset to apply to each y value 
+  
+--]]
+
+function ApplyOffsetInPlace(series, delta_x, delta_y)
+  -- use C++ indeces, not Lua indeces
+  for index=0, series:size()-1 do
+    x,y = series:at(index)
+    series:set(index, x + delta_x, y + delta_y)
+  end
+end
+"/>
    <scripts/>
   </plugin>
-  <plugin ID="CSV Exporter"/>
   <plugin ID="ROS2 Topic Re-Publisher"/>
  </Plugins>
  <!-- - - - - - - - - - - - - - - -->
  <previouslyLoaded_Datafiles>
-  <fileInfo prefix="" filename="../../../../Downloads/knowledge/drone/medhansh/logs/1.BIN">
+  <fileInfo filename="../logs/deadreck_lua/log_1_2026-8-1-12-44-04.bin" prefix="">
    <plugin ID="ArduPilot Bin"/>
   </fileInfo>
  </previouslyLoaded_Datafiles>
  <!-- - - - - - - - - - - - - - - -->
  <customMathEquations/>
  <snippets/>
+ <colorMaps/>
  <!-- - - - - - - - - - - - - - - -->
 </root>
-
