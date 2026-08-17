@@ -2,6 +2,10 @@ import os
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess, DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from launch.actions import RegisterEventHandler, LogInfo, EmitEvent
+from launch.event_handlers import OnProcessExit
+
+from launch.events import Shutdown
 
 def generate_launch_description():
     # Declare launch arguments
@@ -25,7 +29,7 @@ def generate_launch_description():
 
     bin_file_arg = DeclareLaunchArgument(
         'bin_file',
-        default_value=os.path.expanduser('~/drone/simulations/ros2_ws/src/Ardupilot/Flight_Analysis/Ardupilot/logs/00000001.BIN'),
+        default_value=os.path.expanduser('~/drone/simulations/ros2_ws/src/Ardupilot/Flight_Analysis/logs/00000001.BIN'),
         description='Absolute path to the binary log/data file'
     )
 
@@ -69,6 +73,17 @@ def generate_launch_description():
         output='screen',
         name='plotjuggler'
     )
+
+    exit_handler = RegisterEventHandler(
+            OnProcessExit(
+                target_action=ardupilot_process,
+                on_exit=[
+                    LogInfo(msg='Main node exited. Shutting down launch stack...'),
+                    EmitEvent(event=Shutdown(reason='Main controller terminated')),
+                ],
+            )
+        )
+
 
     return LaunchDescription([
         ardupilot_dir_arg,
